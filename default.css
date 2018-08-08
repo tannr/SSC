@@ -541,6 +541,15 @@
 	{
 		float: left;
 		width: 500px;
-		height: 250px;
+		height: 350px;
+		padding: 25px 80px 80px 25px;
+	}
+
+	#bigbox #pbox3,
+	#bigbox #pbox4
+	{
+		float: left;
+		width: 500px;
+		height: 350px;
 		padding: 25px 80px 80px 25px;
 	}
