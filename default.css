@@ -236,11 +236,16 @@
 		color: #FFFFFF;
 	}
 
+
+/**
 	ul.contact li a.icon-Twitter(Coming Soon):before { background: #2DAAE4; }
 	ul.contact li a.icon-facebook:before { background: #39599F; }
 	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
 	ul.contact li a.icon-tumblr:before { background: #31516A; }
 	ul.contact li a.icon-rss:before { background: #F2600B; }
+**/
+
+
 
 /*********************************************************************************/
 /* Button Style                                                                  */
@@ -527,7 +532,7 @@
 		display:block;
 		overflow: hidden;
 		margin-bottom: 2em;
-		padding: #525252 25px;
+		padding: 25px;
 		background: #000000;
 		border-bottom: 4px solid #BC1414;
 		color: #FFFFFF;
