@@ -30,11 +30,11 @@
 
 	/*
 		Powered by:
-		
+
 		Font Awesome (http://fortawesome.github.com/Font-Awesome/)
 		Font Awesome More (http://gregoryloucas.github.com/Font-Awesome-More/)
 	*/
-
+/*****************************************
 	.icon
 	{
 		text-decoration: none;
@@ -96,7 +96,11 @@
 		.icon-play-circle:before          { content: "\f01d"; }
 		.icon-repeat:before               { content: "\f01e"; }
 
+*****************************/
+
 		/* \f020 doesn't work in Safari. all shifted one down */
+
+/****
 		.icon-refresh:before              { content: "\f021"; }
 		.icon-list-alt:before             { content: "\f022"; }
 		.icon-lock:before                 { content: "\f023"; }
@@ -194,7 +198,7 @@
 		.icon-resize-horizontal:before    { content: "\f07e"; }
 
 		.icon-bar-chart:before            { content: "\f080"; }
-		.icon-Twitter(Coming Soon)-sign:before         { content: "\f081"; }
+		.icon-Twitter-sign:before         { content: "\f081"; }
 		.icon-facebook-sign:before        { content: "\f082"; }
 		.icon-camera-retro:before         { content: "\f083"; }
 		.icon-key:before                  { content: "\f084"; }
@@ -218,7 +222,7 @@
 		.icon-check-empty:before          { content: "\f096"; }
 		.icon-bookmark-empty:before       { content: "\f097"; }
 		.icon-phone-sign:before           { content: "\f098"; }
-		.icon-Twitter(Coming Soon):before              { content: "\f099"; }
+		.icon-Twitter:before              { content: "\f099"; }
 		.icon-facebook:before             { content: "\f09a"; }
 		.icon-github:before               { content: "\f09b"; }
 		.icon-unlock:before               { content: "\f09c"; }
@@ -331,8 +335,15 @@
 		.icon-github-alt:before           { content: "\f113"; }
 		.icon-folder-close-alt:before     { content: "\f114"; }
 		.icon-folder-open-alt:before      { content: "\f115"; }
+******/
+
+/***************************
 
 		.icon-blogger-sign:before,.icon-blogger:before,.icon-delicious:before,.icon-dribbble-sign:before,.icon-dribbble:before,.icon-dropbox:before,.icon-drupal:before,.icon-evernote-sign:before,.icon-evernote:before,.icon-flickr-sign:before,.icon-flickr:before,.icon-forrst-sign:before,.icon-forrst:before,.icon-foursquare-sign:before,.icon-foursquare:before,.icon-git-fork:before,.icon-hacker-news:before,.icon-instagram:before,.icon-lastfm-sign:before,.icon-lastfm:before,.icon-paypal:before,.icon-picasa-sign:before,.icon-picasa:before,.icon-reddit:before,.icon-share-this-sign:before,.icon-share-this:before,.icon-skype:before,.icon-soundcloud:before,.icon-spotify:before,.icon-stack-overflow:before,.icon-tumblr-sign:before,.icon-tumblr:before,.icon-vimeo-sign:before,.icon-vimeo:before,.icon-wordpress-sign:before,.icon-wordpress:before,.icon-yelp-sign:before,.icon-yelp:before,.icon-youtube-sign:before,.icon-youtube:before              {font-family:'Font-Awesome-Social'; }
+
+*****************************/
+
+/*****************
 
 		.icon-dropbox:before              { content: "\f300"; }
 		.icon-drupal:before               { content: "\f301"; }
@@ -376,3 +387,4 @@
 		.icon-yelp:before                 { content: "\f328"; }
 		.icon-cloud-upload:before		  { content: "\f0ee"; }
 		.icon-cloud-download:before		  { content: "\f0ed"; }
+****/
