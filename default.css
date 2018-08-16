@@ -316,6 +316,7 @@
 		padding: 3em 0em;
 		text-transform: uppercase;
 		text-align: center;
+		text-shadow: 3px 4px 10px black;
 	}
 
 	#logo h1 a
