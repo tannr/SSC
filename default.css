@@ -251,7 +251,6 @@
 /* Button Style                                                                  */
 /*********************************************************************************/
 
-/*************************
 
 	.button
 	{
@@ -297,7 +296,7 @@
 			transition: all .25s ease-in-out;
 		}
 
-**************************/
+
 
 /*********************************************************************************/
 /* Header                                                                        */
@@ -563,3 +562,29 @@
 		height: 350px;
 		padding: 25px 80px 80px 25px;
 	}
+
+	.salebox {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 330px;
+  position: fixed;
+	right:75%;
+	top:75%;
+  padding: 20px;
+  overflow: auto;
+  border: none;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #d80209;
+  -webkit-box-shadow: 0 1px 15px 4px rgba(0,0,0,1) ;
+  box-shadow: 0 1px 15px 4px rgba(0,0,0,1) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 1, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 1, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 1, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 1, 1) 10ms;
+}
