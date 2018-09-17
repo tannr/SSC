@@ -1,25 +1,120 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
-<url><loc>http://www.southernsteelcontainers.com/</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/index.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/about-us.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/contact-us.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/faq.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/30-CU-YD-STANDARD-BATHTUB-STYLE.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/30-CU-YD-STANDARD-RECTANGULAR.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/40-CU-YD-STANDARD-RECTANGULAR.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/roproducts.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/compact/cproducts.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/10-CU-YD-BATHTUB-CONTAINER.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/11-CU-YD-STANDARD-RECTANGULAR.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/15-CU-YD-BATHTUB-STYLE.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/15-CU-YD-STANDARD-RECTANGULAR.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/20-CU-YD-BATHTUB-CONTAINER.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/30-CU-YD-STANDARD-BATHTUB-STYLE.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/30-CU-YD-STANDARD-RECTANGULAR.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/40-CU-YD-STANDARD-RECTANGULAR.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/roll-off/42-CU-YD-RECTANGULAR-SCRAP-CONTAINER.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/products/compact/40-YD-OCTAGON-RECEIVER.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
-<url><loc>http://www.southernsteelcontainers.com/prodcuts/compact/42-CU-YD-CLOSED-TOP-RECTANGULAR-RECEIVER.html</loc><lastmod>2018-09-06</lastmod><changefreq>Weekly</changefreq><priority>0.5</priority></url>
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://southernsteelcontainers.com/</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/40-CU-YD-STANDARD-RECTANGULAR.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/about-us.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/30-CU-YD-STANDARD-RECTANGULAR.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/30-CU-YD-STANDARD-BATHTUB-STYLE.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/contact-us.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/faq.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/index.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/compact/cproducts.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/roproducts.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/compact/42-CU-YD-CLOSED-TOP-RECTANGULAR-RECEIVER.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/compact/40-YD-OCTAGON-RECEIVER.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/42-CU-YD-RECTANGULAR-SCRAP-CONTAINER.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/15-CU-YD-STANDARD-RECTANGULAR.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/10-CU-YD-BATHTUB-CONTAINER.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/20-CU-YD-BATHTUB-CONTAINER.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/11-CU-YD-STANDARD-RECTANGULAR.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://southernsteelcontainers.com/products/roll-off/15-CU-YD-BATHTUB-STYLE.html</loc>
+    <lastmod>2018-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
+<!--<guid value="c52785c4-76a4-47df-87d0-7947ad1cf567" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
