@@ -14,8 +14,14 @@
 		color: #919191;
 	}
 
+  h1
+	{
+		margin: 0;
+		padding: 0;
+		visibility:hidden;
+	}
 
-	h1, h2, h3
+	h2, h3
 	{
 		margin: 0;
 		padding: 0;
@@ -318,7 +324,7 @@
 		text-shadow: 3px 4px 10px black;
 	}
 
-	#logo h1 a
+	#logo pic a
 	{
 		font-family: impact;
 		text-decoration: none;
