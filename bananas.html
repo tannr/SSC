@@ -1,144 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
+<html>
+<head>
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html xmlns="https://www.w3.org/1999/xhtml">
+    <script src="three.js"></script>
+    <script src="Detector.js"></script>
+    <script src="OrbitControls.js"></script>
+    <script src="OBJLoader.js"></script>
+    <script src="MTLLoader.js"></script>
 
-
-
-
-
-
-<head> <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125358862-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-125358862-1');
-</script>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="viewport2" content="width=device-width, initial-scale=2" />
-<meta name="abnormal" content="width=(device-width)/2, initial-scale=3" />
-<meta name="android" content="width=(device-width)/4, initial-scale=2" />
-<meta name="ios" content="width=device-width, initial-scale=2" />
-<meta name="wide" content="width=(device-width)*2, initial-scale=1" />
-<meta name="narrow" content="width=(device-width)/2, initial-scale=2" />
-
-<title>Southern Steel Containers | Homepage</title>
-<meta name="keywords" content="southern, southern steel, dumpster, buy, buy a dumpster, dumpsters, waste, dumster, dumsters, steel, roll off, roll-off, roll offs, roll-offs, roll, off, offs, steel container, steel containers, containers, container, scrap container, scrap containers, scrap, scrapyard, yard, scrapyard container, scrapyard container, bathtub container, steel bathtub, metal container, metal containers" />
-<meta name="description" content="We build a variety of steel containers for all of your business' needs. One of our most popular containers, the 30 Yard Bathtub, is an all-around best fit!" />
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-<link rel="canonical" href="https://southernsteelcontainers.com/bananas.html" />
-
-<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if IE 7]><link href="default_ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if IE 8]><link href="default_ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
-<!--[if IE 9]><link href="default_ie9.css" rel="stylesheet" type="text/css" /><![endif]-->
-
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background: hsl(0, 0%, 10%);
+        }
+    </style>
 
 </head>
 <body>
 
-  <h1>Homepage</h1>
-
-	<div id="logo" class="container">
-		<pic><a href="index.html"><img src="images/southernsteel-logo.png"></a></pic>
-	</div>
-
-	<div class="salebox">
-    OCTOBER DEAL!
-    <br>
-    <br>
-		Prepay 50% <br>for a full load of 30 Yard Containers,
-    <br>
-		<b>GET (1) OF THEM FOR FREE</b>!
-    <br>
-    <br>
-		Call now:<br>(800)-973-5224
-	</div>
-
-<div id="menu" class="container">
-	<ul>
-		<li class="current_page_item"><a href="index.html" accesskey="1" title="Homepage">Homepage</a></li>
-		<li><a href="products.html" accesskey="2" title="Products">Products</a></li>
-		<li><a href="about-us.html" accesskey="3" title="About Us">About Us</a></li>
-		<li><a href="contact-us.html" accesskey="4" title="Contact Us">Contact Us</a></li>
-		<li><a href="faq.html" accesskey="5" title="FAQs">FAQs</a></li>
-	</ul>
-</div>
-<div id="banner" class="container"> <a href="products.html"><img src="images/pic01.png" width="1200" height="500" alt="" /></a></div>
-<div id="three-column" class="container">
-
-	<div id="tbox1">
-		<h2>30 YARD - BATHTUB</h2>
-		<p>A favorite for cramped workyards, our 30 yard "Bathtub" container is made to suit your small-to-medium container needs! Available in a variety of colors for a more personal product.</p>
-		<a href="products/roll-off/30-CU-YD-STANDARD-BATHTUB-STYLE.html" class="button">Learn More</a>
-	</div>
-	<div id="tbox2">
-		<h2>30 YARD - RECTANGULAR</h2>
-		<p>Our "cans" are built to last, and with the 30 Yard Rectangular, we're sure that if you're looking for a sturdy, all-purpose container, look no further!</p>
-		<a href="products/roll-off/30-CU-YD-STANDARD-RECTANGULAR.html" class="button">Learn More</a>
-	</div>
-	<div id="tbox3">
-		<h2>40 YARD - RECTANGULAR</h2>
-		<p>For larger storage or clean-up needs, we made our 30 Yard Rectangular just a little bit <strong>BIGGER.</strong> If you're unsure about the size you need...<i>bigger is better</i>.</p>
-		<a href="products/roll-off/40-CU-YD-STANDARD-RECTANGULAR.html" class="button">Learn More</a>
-	</div>
-
-</div>
-
-<div id="footer" class="container">
-	<div id="fbox1">
-		<h2 class="title">Call Us Now!</h2>
-		<p>4001 Lakeside Dr, Alexandria, LA 71302
-			<br>Office: (318)-473-2526
-			<br>Hotline: (800)-973-5224
-			<br> </p>
-	</div>
-	<div id="fbox2">
-		<h2 class="title">FAQs</h2>
-		<ul class="style1">
-			<li class="first"><a href="faq.html">How many containers can ship per load?</a></li>
-			<li><a href="faq.html">I'm starting a waste hauling company. Can you make any recommendations?</a></li>
-			<li><a href="faq.html">I use containers with special specifications. Can you assemble according to what I need?</a></li>
-		</ul>
-	</div>
-	<div id="fbox3">
-		<h2 class="title">Social</h2>
-		<ul class="style1">
-			<li class="first"><a href="https://twitter.com/ContainerSteel?lang=en">Twitter</a></li>
-			<li><a href="https://www.facebook.com/SouthernSteelContainers/">Facebook</a></li>
-
-			<li><a href="#">Google+(Coming Soon)</a></li>
-		</ul>
-	</div>
-</div>
-<div id="copyright" class="container">
-	<p>2018&copy; Southern Steel Containers, All rights reserved.</p>
-</div>
-
-
-	<script type="text/javascript">
-		var $zoho=$zoho || {};
-		$zoho.salesiq = $zoho.salesiq ||
-		{widgetcode:"10fcabd842ab07c3e09bbe895f1ba9e8ef4270f648eea5de5cb0c420dec011caf5eee7c315530792602c05562ce17c82",
-		 values:{},
-		 ready:function(){}};
-		 var d=document;
-		 s=d.createElement("script");
-		 s.type="text/javascript";
-		 s.id="zsiqscript";s.defer=true;
-		 s.src="https://salesiq.zoho.com/widget";
-		 t=d.getElementsByTagName("script")[0];
-		 t.parentNode.insertBefore(s,t);
-	</script>
+    <script>
+        // You can put all the example code in a separate file or just add it here for simplicity.
+        // Also no ES6 today, so we don't need a build setup ;)
+    </script>
 
 </body>
 </html>
