@@ -113,14 +113,64 @@
               /* Scene */
               scene = new THREE.Scene();
               lighting = false;
-              ambient = new THREE.AmbientLight(0xffffff, 1.0);
-              scene.add(ambient);
-              keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(30, 100%, 100%)'), 1.0);
-              keyLight.position.set(-100, 0, 100);
-              fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 100%, 100%)'), 0.75);
-              fillLight.position.set(100, 0, 100);
-              backLight = new THREE.DirectionalLight(0xffffff, 1.0);
-              backLight.position.set(100, 0, -100).normalize();
+
+              var spotLightOH = new THREE.SpotLight( 0xffffff );
+              var spotLightBottom = new THREE.SpotLight( 0xffffff );
+              var spotLightLeft = new THREE.SpotLight( 0xffffff );
+              var spotLightRight = new THREE.SpotLight( 0xffffff );
+
+              spotLightOH.position.set( 0, 100, 0 );
+
+              spotLightOH.castShadow = true;
+
+              spotLightOH.shadow.mapSize.width = 1024;
+              spotLightOH.shadow.mapSize.height = 1024;
+
+              spotLightOH.shadow.camera.near = 500;
+              spotLightOH.shadow.camera.far = 4000;
+              spotLightOH.shadow.camera.fov = 30;
+              scene.add(spotLightOH);
+              /**/
+              spotLightBottom.position.set( 0, -100, 0 );
+
+              spotLightBottom.castShadow = true;
+
+              spotLightBottom.shadow.mapSize.width = 1024;
+              spotLightBottom.shadow.mapSize.height = 1024;
+
+              spotLightBottom.shadow.camera.near = 500;
+              spotLightBottom.shadow.camera.far = 4000;
+              spotLightBottom.shadow.camera.fov = 30;
+              scene.add(spotLightBottom);
+              /**/
+              spotLightLeft.position.set( 100, 100, 75 );
+
+              spotLightLeft.castShadow = true;
+
+              spotLightLeft.shadow.mapSize.width = 1024;
+              spotLightLeft.shadow.mapSize.height = 1024;
+
+              spotLightLeft.shadow.camera.near = 500;
+              spotLightLeft.shadow.camera.far = 4000;
+              spotLightLeft.shadow.camera.fov = 30;
+              scene.add(spotLightLeft);
+              /**/
+              spotLightRight.position.set( -100, 100, 75 );
+
+              spotLightRight.castShadow = true;
+
+              spotLightRight.shadow.mapSize.width = 1024;
+              spotLightRight.shadow.mapSize.height = 1024;
+
+              spotLightRight.shadow.camera.near = 500;
+              spotLightRight.shadow.camera.far = 4000;
+              spotLightRight.shadow.camera.fov = 30;
+              scene.add(spotLightRight);
+              /**/
+
+              var light = new THREE.AmbientLight( 0x404040 ); // soft white light
+              scene.add( light );
+
               /* Model */
               var mtlLoader = new THREE.MTLLoader();
               mtlLoader.setBaseUrl('../../scripts/assets/');
@@ -147,7 +197,7 @@
               controls = new THREE.OrbitControls(camera, renderer.domElement);
               controls.enableDamping = true;
               controls.dampingFactor = 0.25;
-              controls.enableZoom = false;
+              controls.enableZoom = true;
 
               /* Events */
               window.addEventListener('resize', onWindowResize, false);
@@ -161,18 +211,6 @@
           }
           function onKeyboardEvent(e) {
               if (e.code === 'KeyL') {
-                  lighting = !lighting;
-                  if (lighting) {
-                      ambient.intensity = .25;
-                      scene.add(keyLight);
-                      scene.add(fillLight);
-                      scene.add(backLight);
-                  } else {
-                      ambient.intensity = 1.0;
-                      scene.remove(keyLight);
-                      scene.remove(fillLight);
-                      scene.remove(backLight);
-                  }
               }
           }
           function animate() {
@@ -267,8 +305,8 @@
 		<h2 class="title">Call Us Now!</h2>
 		<p>4001 Lakeside Dr, Alexandria, LA 71302 <br>Office: (318)-473-2526 <br>Hotline: (800)-973-5224
     <br>Email: <a href="mailto:sales@southernsteelcontainers.com">sales@southernsteelcontainers.com</a>
-    <br>Now accepting all major credit cards.
-    <br><img src="../../images/creditcards.jpg" style="width:40%">
+    <br>Now accepting all major credit cards and ACH.
+    <br><img src="../../images/creditcards.jpg" style="width:40%">&nbsp;&nbsp;<font size="6">+</font><img src="../../images/echeck.png" style="width:15%">
   </p>
 		</div>
 	<div id="fbox2">
