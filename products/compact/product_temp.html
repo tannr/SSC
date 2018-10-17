@@ -81,17 +81,18 @@
 		<li class="current_page_item"><a href="../../products.html" accesskey="2" title="Products">Products</a></li>
 		<li><a href="../../about-us.html" accesskey="3" title="About Us">About Us</a></li>
 		<li><a href="../../contact-us.html" accesskey="4" title="Contact Us">Contact Us</a></li>
-		<li><a href="faq.html" accesskey="5" title="FAQs">FAQs</a></li>
+		<li><a href="../../faq.html" accesskey="5" title="FAQs">FAQs</a></li>
 	</ul>
 </div>
 
 <div id="bigbox" class="container">
   <br>
-  <center><strong>40 YD OCTAGON RECEIVER</strong></center>
+  <center><strong>30 YARD BATHTUB</strong></center>
   <br>
 <div id="3dmodelviewer" class="container">
   <center>
     <div id="whiskey" class="container" style="width:750px; height:500px; display:flex; margin:auto; padding: 0; overflow:hidden; background: hsl(0, 0%, 10%);">
+
       <!--3D Model-->
 
       <script>
@@ -100,6 +101,8 @@
               Detector.addGetWebGLMessage();
           }
           var container;
+          var loadedModel;
+          var isMouseClicked = false;
           var camera, controls, scene, renderer;
           var lighting, ambient, keyLight, fillLight, backLight;
           init();
@@ -109,15 +112,15 @@
               document.createElement('div');
               /* Camera */
               camera = new THREE.PerspectiveCamera(90, window.innerWidth/window.innerHeight, 1, 1000);
-              camera.position.z = 50;
+              camera.position.z = 75;
               /* Scene */
               scene = new THREE.Scene();
               lighting = false;
 
-              var spotLightOH = new THREE.SpotLight( 0xffffff );
-              var spotLightBottom = new THREE.SpotLight( 0xffffff );
-              var spotLightLeft = new THREE.SpotLight( 0xffffff );
-              var spotLightRight = new THREE.SpotLight( 0xffffff );
+              var spotLightOH = new THREE.SpotLight( 0xffffff, 2 );
+              var spotLightBottom = new THREE.SpotLight( 0xffffff, 2 );
+              var spotLightLeft = new THREE.SpotLight( 0xffffff, .75 );
+              var spotLightRight = new THREE.SpotLight( 0xffffff, .75 );
 
               spotLightOH.position.set( 0, 100, 0 );
 
@@ -175,23 +178,26 @@
               var mtlLoader = new THREE.MTLLoader();
               mtlLoader.setBaseUrl('../../scripts/assets/');
               mtlLoader.setPath('../../scripts/assets/');
-      /**/            mtlLoader.load('20yard.mtl', function (materials) {
+              mtlLoader.load('30ydbathtub.mtl', function (materials) {
                   materials.preload();
                   var objLoader = new THREE.OBJLoader();
                   objLoader.setMaterials(materials);
                   objLoader.setPath('../../scripts/assets/');
-      /**/            objLoader.load('20yard.obj', function (object) {
+                  objLoader.load('30ydbathtub.obj', function (object) {
                       scene.add(object);
+                      loadedModel = object;
                       var helper = new THREE.CameraHelper( camera );
                       /*scene.add( helper );*/
 
                   });
               });
+
+
               /* Renderer */
               renderer = new THREE.WebGLRenderer();
               renderer.setPixelRatio(1);
               renderer.setSize(750, 500);
-              renderer.setClearColor(new THREE.Color("hsl(0, 0%, 15%)"));
+              renderer.setClearColor(new THREE.Color("hsl(0, 0%, 0%)"));
               container.appendChild(renderer.domElement);
               /* Controls */
               controls = new THREE.OrbitControls(camera, renderer.domElement);
@@ -199,10 +205,11 @@
               controls.dampingFactor = 0.25;
               controls.enableZoom = true;
 
-              /* Events */
+              /* Events
               window.addEventListener('resize', onWindowResize, false);
               window.addEventListener('keydown', onKeyboardEvent, false);
-
+              */
+              window.addEventListener('mousedown', onMouseDown);
           }
           function onWindowResize() {
               camera.aspect = ((container.width) / (container.height));
@@ -215,12 +222,29 @@
           }
           function animate() {
               requestAnimationFrame(animate);
+              if(!isMouseClicked){
+                  loadedModel.rotation.y += 0.005;
+              }
               controls.update();
               render();
           }
           function render() {
               renderer.render(scene, camera);
           }
+          function onMouseDown() {
+              isMouseClicked = true;
+          }
+
+
+/************************Tricky Stuff*****************************/
+
+
+
+
+
+
+
+
       </script>
     </div>
   </center>
