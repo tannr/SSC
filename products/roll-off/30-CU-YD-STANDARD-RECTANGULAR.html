@@ -19,15 +19,26 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>30-CU-YD Standard Rectangular | Southern Steel Containers</title>
-<meta name="keywords" content="southern, southern steel, dumpster, buy, buy a dumpster, dumpsters, waste, dumster, dumsters, steel, roll off, roll-off, roll offs, roll-offs, roll, off, offs, steel container, steel containers, containers, container, scrap container, scrap containers, scrap, scrapyard, yard, scrapyard container, scrapyard container, bathtub container, steel bathtub, metal container, metal containers, rectangular, rectangular container, 30 yard rectangular, 30 yard, 30" />
-<meta name="description" content="The 30 Yard Rectangular, sister to our popular Bathtub, is an all-around best fit for your business needs. Big enough to do the job, small enough for compact workyards!" />
+<meta name="keywords" content="southern, southern steel, dumpster, buy, buy a dumpster, dumpsters, waste, dumster, dumsters, steel, roll off, roll-off, roll offs, roll-offs, roll, off, offs, steel container, steel containers, containers, container, scrap container, scrap containers, scrap, scrapyard, yard, scrapyard container, scrapyard container, bathtub container, steel bathtub, metal container, metal containers, 40 yard, 40, octagon, receiver, compacter, compacting, compactor" />
+<meta name="description" content="Our 40 Yard Receiver has an Octagonal shape, making it the perfect fit container for compacting use. Give us a call and our staff will answer any questions!" />
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="../../default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="../../fonts.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
-<link rel="canonical" href="https://southernsteelcontainers.com/products/roll-off/30-CU-YD-STANDARD-RECTANGULAR.html" />
+<link rel="canonical" href="https://southernsteelcontainers.com/products/compact/40-YD-OCTAGON-RECEIVER.html"
+/>
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+      <!-- 3d Viewer scripts -->
+    <script src="../../scripts/three.js"></script>
+    <script src="../../scripts/Detector.js"></script>
+    <script src="../../scripts/OrbitControls.js"></script>
+    <script src="../../scripts/OBJLoader.js"></script>
+    <script src="../../scripts/MTLLoader.js"></script>
+
+
+
 
 </head>
 <body>
@@ -75,56 +86,284 @@
 </div>
 
 <div id="bigbox" class="container">
-  <br>
-  <center><strong>30 CU YD STANDARD RECTANGULAR</strong></center>
-  <br>
-	<img src="INSERT-IMAGE-HERE"><br>
+  <h2><center><font size="7">30 Yard Rectangular</font><center></h2>
+<div id="3dmodelviewer" class="container">
+  <center>
+    <div id="whiskey" class="container" style="width:750px; height:500px; display:flex; margin:auto; padding: 0; overflow:hidden; background: hsl(0, 0%, 10%);">
+
+      <!--3D Model-->
+
+      <script>
+
+          if (!Detector.webgl) {
+              Detector.addGetWebGLMessage();
+          }
+          var container;
+          var loadedMaterials;
+          var loadedModel;
+          var isModelLoaded = false;
+          var isMouseClicked = false;
+          var camera, controls, scene, renderer;
+          var lighting, ambient, keyLight, fillLight, backLight;
+          init();
+          animate();
+          function init() {
+              container = document.getElementById("whiskey");
+              document.createElement('div');
+              /* Camera */
+              camera = new THREE.PerspectiveCamera(90, window.innerWidth/window.innerHeight, 1, 1000);
+              camera.position.z = 80;
+              /* Scene */
+              scene = new THREE.Scene();
+              lighting = false;
+
+              var spotLightOH = new THREE.SpotLight( 0xffffff, 2 );
+              var spotLightBottom = new THREE.SpotLight( 0xffffff, 2 );
+              var spotLightLeft = new THREE.SpotLight( 0xffffff, .75 );
+              var spotLightRight = new THREE.SpotLight( 0xffffff, .75 );
+
+              spotLightOH.position.set( 0, 100, 0 );
+
+              spotLightOH.castShadow = true;
+
+              spotLightOH.shadow.mapSize.width = 1024;
+              spotLightOH.shadow.mapSize.height = 1024;
+
+              spotLightOH.shadow.camera.near = 500;
+              spotLightOH.shadow.camera.far = 4000;
+              spotLightOH.shadow.camera.fov = 30;
+              scene.add(spotLightOH);
+              /**/
+              spotLightBottom.position.set( 0, -100, 0 );
+
+              spotLightBottom.castShadow = true;
+
+              spotLightBottom.shadow.mapSize.width = 1024;
+              spotLightBottom.shadow.mapSize.height = 1024;
+
+              spotLightBottom.shadow.camera.near = 500;
+              spotLightBottom.shadow.camera.far = 4000;
+              spotLightBottom.shadow.camera.fov = 30;
+              scene.add(spotLightBottom);
+              /**/
+              spotLightLeft.position.set( 100, 100, 75 );
+
+              spotLightLeft.castShadow = true;
+
+              spotLightLeft.shadow.mapSize.width = 1024;
+              spotLightLeft.shadow.mapSize.height = 1024;
+
+              spotLightLeft.shadow.camera.near = 500;
+              spotLightLeft.shadow.camera.far = 4000;
+              spotLightLeft.shadow.camera.fov = 30;
+              scene.add(spotLightLeft);
+              /**/
+              spotLightRight.position.set( -100, 100, 75 );
+
+              spotLightRight.castShadow = true;
+
+              spotLightRight.shadow.mapSize.width = 1024;
+              spotLightRight.shadow.mapSize.height = 1024;
+
+              spotLightRight.shadow.camera.near = 500;
+              spotLightRight.shadow.camera.far = 4000;
+              spotLightRight.shadow.camera.fov = 30;
+              scene.add(spotLightRight);
+              /**/
+
+              var light = new THREE.AmbientLight( 0x404040 ); // soft white light
+              scene.add( light );
+
+              /* Model */
+              var mtlLoader = new THREE.MTLLoader();
+              mtlLoader.setBaseUrl('../../scripts/assets/');
+              mtlLoader.setPath('../../scripts/assets/');
+              mtlLoader.load('30YardRecDumpster.mtl', function (materials) {
+                  materials.preload();
+                  var loadedMaterials = materials;
+                  var objLoader = new THREE.OBJLoader();
+                  objLoader.setMaterials(materials);
+                  objLoader.setPath('../../scripts/assets/');
+                  objLoader.load('30YardRecDumpster.obj', function (object) {
+                      scene.add(object);
+                      isModelLoaded = true;
+                      loadedModel = object;
+                      var helper = new THREE.CameraHelper( camera );
+                      /*scene.add( helper );*/
+
+                  });
+              });
+
+
+              /* Renderer */
+              renderer = new THREE.WebGLRenderer();
+              renderer.setPixelRatio(1);
+              renderer.setSize(750, 500);
+              renderer.setClearColor(new THREE.Color("hsl(0, 0%, 0%)"));
+              container.appendChild(renderer.domElement);
+              /* Controls */
+              controls = new THREE.OrbitControls(camera, renderer.domElement);
+              controls.enableDamping = true;
+              controls.dampingFactor = 0.25;
+              controls.enableZoom = true;
+
+              /* Events
+              window.addEventListener('resize', onWindowResize, false);
+              window.addEventListener('keydown', onKeyboardEvent, false);
+              */
+              window.addEventListener('mousedown', onMouseDown);
+          }
+          function onWindowResize() {
+              camera.aspect = ((container.width) / (container.height));
+              camera.updateProjectionMatrix();
+              renderer.setSize((container.width) / (container.height));
+          }
+          function onKeyboardEvent(e) {
+              if (e.code === 'KeyL') {
+              }
+          }
+          function animate() {
+              requestAnimationFrame(animate);
+              if(isModelLoaded){
+                if(!isMouseClicked){
+                    loadedModel.rotation.y += 0.005;
+                }
+              }
+              controls.update();
+              render();
+          }
+          function render() {
+              renderer.render(scene, camera);
+          }
+          function onMouseDown() {
+              isMouseClicked = true;
+          }
+
+          function loadNew(matfile) {
+            scene.remove(loadedModel);
+            var mtlLoader = new THREE.MTLLoader();
+            mtlLoader.setBaseUrl('../../scripts/assets/');
+            mtlLoader.setPath('../../scripts/assets/');
+            mtlLoader.load( matfile, function (materials) {
+                materials.preload();
+                var loadedMaterials = materials;
+                isMouseClicked = false;
+                var objLoader = new THREE.OBJLoader();
+                objLoader.setMaterials(materials);
+                objLoader.setPath('../../scripts/assets/');
+                objLoader.load('30YardRecDumpster.obj', function (object) {
+                    scene.add(object);
+                    isModelLoaded = true;
+                    loadedModel = object;
+                });
+            });
+          }
+
+      </script>
+    </div>
+  </center>
+</div>
 
 <br>
-Hotline: (800)-973-5224
+<div id="buttonbox" class="container">
+  <center>
+  <p><u>Available Colors:</u></p>
+  <button id="color1" onclick="loadNew('30YardRecDumpster.mtl')">Safety Red</button>
+  <button id="color2" onclick="loadNew('30YardRecDumpsterOrange.mtl')">Safety Orange</button>
+  <button id="color3" onclick="loadNew('30YardRecDumpsterBlue.mtl')">Container Blue</button>
+  <button id="color4" onclick="loadNew('30YardRecDumpsterGreen.mtl')">Lime-A-Licious</button>
+  <br>
+  Click-and-drag to Rotate
+  <br>
+  Scroll to Zoom
+  <br>
+  </center>
+</div>
+  <center>
+  Hotline: (800)-973-5224
+  </center>
 	<br>
-  <table class="Content" border="0" cellspacing="0">
-            <tbody><tr>
-                <td class="Content">
+
+<table class="Content" border="1" cellspacing="0" align="center">
+  <tbody>
+    <tr>
+      <td>
+        <tr>
+          <td>
+            <p><b>GENERAL:</b></p>
+          </td>
+          <td>
+            <p><b>FLOOR: </b></p>
+          </td>
+          <td>
+            <p><b>SIDES: </b></p>
+          </td>
+        </tr>
+        <tr align="top">
+            <td style="vertical-align:top">
+            <div>*CAPACITY- 40 CUBIC YARDS </div>
+            <div>*LENGTH- 22' </div>
+            <div>*WIDTH- 8' </div>
+            <div>*INSIDE HEIGHT - 62"</div>
+            <div>*WEIGHT - APPROX 5180# </div>
+            <div>*MEETS ALL AMERICAN NATIONAL STANDARD SAFETY CODES.</div>
+            </td>
+
+            <td style="vertical-align:top">
+            <div>*Plate 3/16" A-36 Carbon Steel</div>
+            <div>*Understructure, 3" channel on 18" centers</div>
+            <div>*Rails, 6" x 2" x 1/4" </div>
+            <div>*Wheels: (4) 10" dia. X 8" long</div>
+            <div>*Gussets: every other crossmember</div>
+            </td>
+
+            <td style="vertical-align:top">
+            <div>*Sheet 3/16” A-36 carbon steel</div>
+            <div>*One hand ratchet latch back door system</div>
+            <div>*Gussets on both sides, sides to floor</div>
+            </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p><b>BULKHEAD: </b></p>
+          </td>
+          <td>
+            <p><b>DOOR: </b></p>
+          </td>
+          <td>
+            <p><b>PAINT: </b></p>
+          </td>
+        </tr>
+
+        <tr>
+            <td style="vertical-align:top">
+            <div>*3/16” sheet, A-36 carbon steel</div>
+            <div>*Four way tapered channel 4" uprights,</div>
+            <div>(2) with floor gussets</div>
+            </td>
+
+            <td style="vertical-align:top">
+            <div>*11 gauge sheet, A-36 carbon sheet</div>
+            <div>*Hinges (4) heavy duty with grease fittings</div>
+            <div>*Framed with 3" x 4" x 11 ga. Structural tubing</div>
+            </td>
+
+            <td style="vertical-align:top">
+            <div>*Container shall be thoroughly scraped and cleaned. </div>
+            <div>*Exterior is primed with (1) coat low V.O.C. alkyd primer approximately 3 mils thick. </div>
+            <div>*(1) Finish coat is a high solid low V.O.C. enamel approximately 3 mils thick. </div>
+            </td>
+
+            </font>
+          </td>
+		    </tr>
+      </td>
+    </tr>
+	</tbody>
+</table>
 
 
-                    <!-- Content Table #3 -->
-                    <font class="fontpoint" color="#FFFFFF">
-</font><table border="0" width="100%" cellspacing="0" cellpadding="0" align="left" bordercolor="white" bordercolordark="white" bordercolorlight="white">
-
-
-<tbody>
-							<tr>
-								<td colspan="2"><br>
-									<font class="fontpoint" color="#FFFFFF">
-<div><b>GENERAL:</b></div>
-<div>LENGTH - 22'</div>
-<div>WIDTH - 8'</div>
-<div>INSIDE HEIGHT - 62"</div>
-<div>WEIGHT - APPROX 5180#</div>
-<div>MEETS ALL AMERICAN NATIONAL STANDARD SAFETY CODES</div>
-<br>
-<p><b>FEATURES:</b></p>
-<div>3/16" FLOOR</div>
-<div>3" STRUCTURAL CHANNEL ON 18" SPACING</div>
-<div>(4) 8 X 10 WHEELS</div>
-<div>12 GAUGE SIDES</div>
-<div> </div>
-<div>(3) 8" MACHINED HINGES W/GREASE FITTINGS</div>
-<div>INDUSTRIAL GRADE PAINT AND PRIMER</div>
-<br>
-
-</font></td>
-							</tr>
-					</tbody></table>
-				  </td>
-				</tr>
-			</tbody></table>
-
-	</td>
-</tr>
-
-                            </tbody></table><!-- Content Table#3 -->                        </td>                    </tr>                </tbody></table>
   <br>
 </div>
 
@@ -141,7 +380,7 @@ Hotline: (800)-973-5224
     <br>Now accepting all major credit cards and ACH.
     <br><img src="../../images/creditcards.jpg" style="width:40%">&nbsp;&nbsp;<font size="6">+</font><img src="../../images/echeck.png" style="width:15%">
   </p>
-		</div>
+	</div>
 	<div id="fbox2">
 		<h2 class="title">FAQs</h2>
 		<ul class="style1">
@@ -149,7 +388,7 @@ Hotline: (800)-973-5224
 			<li><a href="../../faq.html">I'm starting a waste hauling company. Can you make any recommendations?</a></li>
 			<li><a href="../../faq.html">I use containers with special specifications. Can you assemble according to what I need?</a></li>
 		</ul>
-		</div>
+	</div>
 	<div id="fbox3">
 		<h2 class="title">Social</h2>
 		<ul class="style1">
