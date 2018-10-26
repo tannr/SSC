@@ -117,8 +117,11 @@
               var spotLightBottom = new THREE.SpotLight( 0xffffff, 2 );
               var spotLightLeft = new THREE.SpotLight( 0xffffff, .75 );
               var spotLightRight = new THREE.SpotLight( 0xffffff, .75 );
+              var spotLightFront = new THREE.SpotLight( 0xffffff, .75);
+              var spotLightBack = new THREE.SpotLight( 0xffffff, .75);
 
-              spotLightOH.position.set( 0, 100, 0 );
+
+              spotLightOH.position.set( 0, 150, 0 );
 
               spotLightOH.castShadow = true;
 
@@ -129,8 +132,8 @@
               spotLightOH.shadow.camera.far = 4000;
               spotLightOH.shadow.camera.fov = 30;
               scene.add(spotLightOH);
-              /**/
-              spotLightBottom.position.set( 0, -100, 0 );
+
+              spotLightBottom.position.set( 0, -150, 0 );
 
               spotLightBottom.castShadow = true;
 
@@ -141,8 +144,8 @@
               spotLightBottom.shadow.camera.far = 4000;
               spotLightBottom.shadow.camera.fov = 30;
               scene.add(spotLightBottom);
-              /**/
-              spotLightLeft.position.set( 100, 100, 75 );
+
+              spotLightLeft.position.set( 150, 20, 0 );
 
               spotLightLeft.castShadow = true;
 
@@ -153,8 +156,8 @@
               spotLightLeft.shadow.camera.far = 4000;
               spotLightLeft.shadow.camera.fov = 30;
               scene.add(spotLightLeft);
-              /**/
-              spotLightRight.position.set( -100, 100, 75 );
+
+              spotLightRight.position.set( -150, 20, 0 );
 
               spotLightRight.castShadow = true;
 
@@ -165,10 +168,30 @@
               spotLightRight.shadow.camera.far = 4000;
               spotLightRight.shadow.camera.fov = 30;
               scene.add(spotLightRight);
-              /**/
 
-              var light = new THREE.AmbientLight( 0x404040 ); // soft white light
-              scene.add( light );
+              spotLightFront.position.set( 0, 0, 80 );
+
+              spotLightFront.castShadow = false;
+
+              spotLightFront.shadow.mapSize.width = 1024;
+              spotLightFront.shadow.mapSize.height = 1024;
+
+              spotLightFront.shadow.camera.near = 500;
+              spotLightFront.shadow.camera.far = 4000;
+              spotLightFront.shadow.camera.fov = 30;
+              scene.add(spotLightFront);
+
+              spotLightBack.position.set( 0, 0, -80 );
+
+              spotLightBack.castShadow = false;
+              spotLightBack.shadow.mapSize.width = 1024;
+
+              spotLightBack.shadow.mapSize.height = 1024;
+
+              spotLightBack.shadow.camera.near = 500;
+              spotLightBack.shadow.camera.far = 4000;
+              spotLightBack.shadow.camera.fov = 30;
+              scene.add(spotLightBack);
 
               /* Model */
               var mtlLoader = new THREE.MTLLoader();
