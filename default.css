@@ -582,11 +582,11 @@
   overflow: auto;
   border: none;
   font: normal 16px/1 "Times New Roman", Times, serif;
-  color: rgba(255,255,255,1);
+  color: #000000;
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: #d80209;
+  background: #eb6123;
   -webkit-box-shadow: 0 1px 15px 4px rgba(0,0,0,1) ;
   box-shadow: 0 1px 15px 4px rgba(0,0,0,1) ;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
